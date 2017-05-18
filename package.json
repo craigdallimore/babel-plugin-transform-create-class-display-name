@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-create-class-display-name",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Avoids `Unknown` react components in devtools",
   "main": "index.js",
   "repository": {
