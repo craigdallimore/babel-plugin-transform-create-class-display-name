@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Avoids `Unknown` react components in devtools",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigdallimore/babel-plugin-transform-create-class-display-name"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
