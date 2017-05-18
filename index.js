@@ -22,6 +22,7 @@ module.exports = function (babel) {
       VariableDeclarator : function(path, state) {
 
         if (
+          path.node.init &&
           path.node.init.type        === 'CallExpression' &&
           path.node.init.callee.name === 'reactCreateClass'
         ) {
@@ -36,4 +37,4 @@ module.exports = function (babel) {
     }
   };
 
-}
+};
