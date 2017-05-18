@@ -6,7 +6,7 @@ You might see `<Unknown>` in the react-devtools as a consequence.
 
 This babel plugin will implicitly transform
 
-```javascript`
+```javascript
 const Foo = reactCreateClass({
 
 })
@@ -14,7 +14,7 @@ const Foo = reactCreateClass({
 
 into
 
-```
+```javascript
 const Foo = reactCreateClass({
 
   displayName : 'Foo'
