@@ -1,9 +1,11 @@
-export default function (babel) {
+"use strict";
 
-  const { types: t } = babel;
+module.exports = function (babel) {
 
-  const createClassConfigVisitor = {
-    CallExpression(path, state) {
+  var t = babel.types;
+
+  var createClassConfigVisitor = {
+    CallExpression : function(path, state) {
       if (path.node.callee.name === 'reactCreateClass') {
         path.node.arguments[0].properties.push(
           t.objectProperty(
@@ -13,11 +15,11 @@ export default function (babel) {
         );
       }
     }
- };
+  };
 
   return {
     visitor: {
-      VariableDeclarator(path, state) {
+      VariableDeclarator : function(path, state) {
 
         if (
           path.node.init.type        === 'CallExpression' &&
