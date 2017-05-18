@@ -1,0 +1,11 @@
+{
+  "name": "babel-plugin-transform-create-class-display-name",
+  "version": "0.0.1",
+  "description": "Avoids `Unknown` react components in devtools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "craigdallimore",
+  "license": "MIT"
+}
